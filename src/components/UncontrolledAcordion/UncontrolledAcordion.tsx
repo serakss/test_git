@@ -7,10 +7,11 @@ type AccordionPropsType = {
     //collapsed: boolean
 }
 
+
 export function UncontrolledAccordion(props: AccordionPropsType) {
 
    // let [collapsed, setCollapsed] = useState(false);
-    let[collapsed,dispatch]=useReducer(reducer,false)
+    let[collapsed,dispatch]=useReducer(reducer,{collapsed:false})
 
     return (
         <div>
